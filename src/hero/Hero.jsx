@@ -38,7 +38,7 @@ export const Hero = () => {
             Download CV
           </a> */}
           <button className="btn btn-secondary" onClick={handleGetInTouch} style={{justifyContent: "center"}}>
-            Contack
+            Contact
           </button>
         </div>
         
