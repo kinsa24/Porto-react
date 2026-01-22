@@ -1,0 +1,203 @@
+/* ========== HERO SECTION STYLES ========== */
+
+/* ========== MAIN CONTAINER ========== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d1d1d;
+  padding: 80px 20px 60px 20px;
+  overflow: hidden;
+  margin-top: 0.1rem;
+}
+
+.hero-wrapper {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* ========== TITLE & HEADING ========== */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: hsl(228, 8%, 95%);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #19c5b9;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: hsl(228, 8%, 65%);
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* ========== CTA BUTTONS ========== */
+.hero-cta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: #19c5b9;
+  color: #1d1d1d;
+  border-color: #19c5b9;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #14a39d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(25, 197, 185, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #19c5b9;
+  border: 2px solid #19c5b9;
+}
+
+.btn-secondary:hover {
+  background-color: #19c5b9;
+  color: #1d1d1d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(25, 197, 185, 0.2);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet - 768px */
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1.15rem;
+  }
+}
+
+/* Desktop - 1024px */
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    padding: 120px 40px 60px 40px;
+  }
+
+  .hero-wrapper {
+    gap: 32px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2.25rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .hero-cta {
+    gap: 24px;
+  }
+
+  .btn {
+    padding: 14px 40px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile - Below 768px */
+@media screen and (max-width: 767px) {
+  .hero-section {
+    min-height: 100vh;
+    padding: 120px 20px 60px 20px;
+  }
+
+  .hero-wrapper {
+    gap: 16px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+}

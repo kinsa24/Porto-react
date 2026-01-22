@@ -1,0 +1,95 @@
+.skills-section {
+  min-height: 150vh;
+  margin: 0 15px;
+}
+.title-container {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+.skills-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-gap: 0.6rem;
+  grid-auto-rows: minmax(115px, auto);
+  perspective: 500px;
+}
+
+.skill-item {
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  text-align: center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.5s;
+}
+.skills-logo {
+  width: 3rem;
+  height: auto;
+  transition: transform 0.5s;
+}
+.title-stack {
+  margin-top: 45px;
+}
+.title-icon {
+  color: black;
+  transition: transform 0.5s;
+}
+
+.skill-item:nth-child(2) {
+  transition-delay: 200ms;
+}
+.skill-item:nth-child(3) {
+  transition-delay: 400ms;
+}
+.skill-item:nth-child(4) {
+  transition-delay: 600ms;
+}
+.skill-item:nth-child(5) {
+  transition-delay: 800ms;
+}
+.skill-item:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.skill-item:nth-child(7) {
+  transition-delay: 200ms;
+}
+.skill-item:nth-child(8) {
+  transition-delay: 400ms;
+}
+.skill-item:nth-child(9) {
+  transition-delay: 600ms;
+}
+.skill-item:nth-child(10) {
+  transition-delay: 800ms;
+}
+.skill-item:nth-child(11) {
+  transition-delay: 1000ms;
+}
+@media screen and (min-width: 950px) {
+  .skills-section {
+    margin: 150px 150px;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 0.6rem;
+    text-align: center;
+    grid-auto-rows: minmax(160px, auto);
+  }
+  .title-icon {
+    text-align: center;
+  }
+  .skills-logo {
+    width: 5rem;
+    height: auto;
+  }
+  .title-stack {
+    margin-top: 45px;
+  }
+}
