@@ -16,12 +16,18 @@ export const About = () => {
           About <span style={{ color: "#26e6c6", textAlign: "left" }}>Me</span>
         </h1>
         <p>
-          My name is Muhammad Muhajirin Chinsa, but I usually go by Kinsa. I am
-          currently pursuing a Bachelor's degree in Educational Informatics and
-          Computer Engineering at a state university in Makassar, Universitas
-          Negeri Makassar. With my skills in technology, I hope to help the
-          people around me. Study diligently and don t worry about what will
-          happen, success always comes to those who strive to achieve it.
+          As a web developer, I have gained hands-on experience through
+          freelance projects and internships. Throughout my time in college, I
+          focused on overcoming early academic challenges, using that
+          determination to not only improve my grades but also to sharpen my
+          technical skills and evolve as a developer.{" "}
+        </p>
+        <p>
+          Specializing in front-end development, I have a strong interest in
+          crafting clean, responsive designs that prioritize user experience. I
+          also take the time to explore back-end technologies, broadening my
+          skills in preparation for eventually transitioning into a full-stack
+          developer role.
         </p>
       </div>
       <div className="about-image-container" data-aos="fade-up">
