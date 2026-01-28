@@ -20,7 +20,7 @@ export const About = () => {
           freelance projects and internships. Throughout my time in college, I
           focused on overcoming early academic challenges, using that
           determination to not only improve my grades but also to sharpen my
-          technical skills and evolve as a developer.{" "}
+          technical skills and evolve as a developer.
         </p>
         <p>
           Specializing in front-end development, I have a strong interest in
