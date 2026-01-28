@@ -1,2 +1,2 @@
 # portfoliodev
-Desarrollando mi portafolio con REACT 
+portafolio con REACT 
