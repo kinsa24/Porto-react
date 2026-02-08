@@ -39,7 +39,7 @@ export const WorkExperience = () => {
         <h1>
           Work <span style={{ color: "#18dcb2" }}>Experiance</span>
         </h1>
-        <p>My journey</p>
+        <p>My Journey</p>
       </div>
       
       <div className="work-timeline">
