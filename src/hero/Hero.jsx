@@ -41,7 +41,6 @@ export const Hero = () => {
             Contact
           </button>
         </div>
-        
         <Social />
       </div>
     </section>
