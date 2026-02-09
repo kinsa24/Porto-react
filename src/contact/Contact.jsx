@@ -43,6 +43,7 @@ export const Contact = () => {
 
       {/* === MAIN CONTAINER: Left & Right Columns === */}
       <div className="contact-container">
+        
         {/* LEFT COLUMN - Contact Info & Social Icons */}
         <div className="contact-left">
           {/* Email Section */}
