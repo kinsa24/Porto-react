@@ -16,8 +16,8 @@ export const About = () => {
           About <span style={{ color: "#26e6c6", textAlign: "left" }}>Me</span>
         </h1>
         <p>
-          As a web developer, I have gained hands-on experience through
-          freelance projects and internships. Throughout my time in college, I
+          As a web developer, i have gained hands-on experience through
+          freelance projects and internships. Throughout my time in college, i
           focused on overcoming early academic challenges, using that
           determination to not only improve my grades but also to sharpen my
           technical skills and evolve as a developer.
