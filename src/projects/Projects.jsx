@@ -15,7 +15,7 @@ export const Projects = () => {
       <div className="title-projects-section">
         <h1 style={{ textAlign: "center" }}>
           Proje
-          <span style={{ color: "#26e6c6" }}>cts</span>
+          <span style={{ color: "#26e6c6" }}>ct</span>
         </h1>
       </div>
       <div className="projects-container">
