@@ -95,21 +95,21 @@ export const Contact = () => {
             <h3>Follow Me</h3>
             <div className="contact-social-icons">
               <a
-                href="https://github.com"
+                href="https://github.com/kinsa24"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon-btn">
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-muhajirin-chinsa-143b73344/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon-btn">
                 <FaLinkedin />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/kinsaaaa_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon-btn">
