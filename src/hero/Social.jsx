@@ -44,6 +44,18 @@ export const Social = () => {
       >
         <i className="ri-mail-line"></i>
       </a>
+
+<a
+  href="https://sertifikatpage.netlify.app/"
+  target="_blank"
+  rel="noreferrer"
+  className="social-link"
+  title="Certificates"
+  aria-label="View certificates"
+>
+  <i className="ri-award-fill"></i>
+</a>
+
     </div>
   );
 };
