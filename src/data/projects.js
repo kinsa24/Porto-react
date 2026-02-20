@@ -16,6 +16,7 @@ import {
   calculator1,
   moviebox,
   diskominfo,
+  hotel,
 } from "../assets/projectsimages";
 
 export const projects = [
@@ -152,5 +153,12 @@ export const projects = [
     url: "https://diskominfo.makassarkota.go.id/",
     description: "A digital platform offering public information.",
     image: diskominfo,
+  },
+  {
+    id: 5,
+    title: "Booking Hotel",
+    url: "https://bookinghotel-kin.netlify.app/",
+    description: "A simple hotel booking app for fast and easy reservations.",
+    image: hotel,
   },
 ];
