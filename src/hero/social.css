@@ -86,3 +86,16 @@
     font-size: 1.1rem;
   }
 }
+
+/* Social area consistent background */
+.social, .social-section {
+  background: #1d1d1d !important;
+  background-color: #1d1d1d !important;
+  color: #e6e6e6;
+}
+
+.social .badge, .social a {
+  background: rgba(255,255,255,0.02);
+  color: #e6e6e6;
+  border: 1px solid rgba(255,255,255,0.04);
+}

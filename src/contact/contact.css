@@ -365,3 +365,17 @@
     font-size: 1rem;
   }
 }
+
+/* Replace gradients/other tones in contact/footer with base tone */
+.contact, .contact-section, .contact-container, footer {
+  background: #1d1d1d !important;
+  background-color: #1d1d1d !important;
+  color: #e6e6e6;
+}
+
+/* contact card/button readability */
+.contact .card, .contact-card {
+  background: #272727;
+  color: #e6e6e6;
+  border: 1px solid rgba(255,255,255,0.04);
+}

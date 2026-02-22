@@ -201,3 +201,16 @@
     gap: 12px;
   }
 }
+
+/* Normalize hero background to project tone */
+.hero, .hero-section, .home-hero {
+  background: #1d1d1d !important;
+  background-color: #1d1d1d !important;
+}
+
+/* social/hero inner card fallback (avoid bright patches) */
+.hero .card, .hero-card {
+  background: #272727;
+  color: #eaeaea;
+  border: 1px solid rgba(255,255,255,0.04);
+}

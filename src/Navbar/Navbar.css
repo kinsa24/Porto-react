@@ -20,7 +20,10 @@ header {
   display: flex;
   align-items: left;
   max-width: 55vw;
-  background: rgba(67, 67, 67, 0.5);
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #e6e6e6;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
   backdrop-filter: blur(10px);
 }
 
@@ -78,4 +81,10 @@ header .nav-btn {
     top: 1rem;
     right: 0.5rem;
   }
+  
+}
+
+/* if navbar had solid bg, enforce page tone through its container */
+.navbar .container, .navbar-wrapper {
+  background: transparent;
 }

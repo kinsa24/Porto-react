@@ -100,3 +100,17 @@
     border-radius: 50%;
   }
 }
+
+/* Normalize about section background */
+.about, .about-section {
+  background: #1d1d1d !important;
+  background-color: #1d1d1d !important;
+  color: #e6e6e6;
+}
+
+/* about inner cards */
+.about .card, .about-card {
+  background: #272727;
+  color: #e6e6e6;
+  border: 1px solid rgba(255,255,255,0.04);
+}

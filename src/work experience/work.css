@@ -1,3 +1,17 @@
+/* Work / experience section */
+.work, .work-section, .experience {
+  background: #1d1d1d !important;
+  background-color: #1d1d1d !important;
+  color: #e6e6e6;
+}
+
+/* work cards */
+.work .card, .experience-card {
+  background: #272727;
+  color: #e6e6e6;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
 .work-experience {
   padding: 80px 40px;
   max-width: 900px;
