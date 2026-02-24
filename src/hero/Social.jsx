@@ -45,6 +45,17 @@ export const Social = () => {
         <i className="ri-mail-line"></i>
       </a> */}
 
+      <a
+  href="/cv" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="social-link"
+  title="View CV"
+  aria-label="View CV"
+>
+<i className="ri-file-text-line"></i>
+</a>
+
 <a
   href="https://sertifikatpage.netlify.app/"
   target="_blank"
