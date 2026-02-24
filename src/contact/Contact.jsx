@@ -129,7 +129,7 @@ export const Contact = () => {
           <div className="map-container">
             <iframe
               title="Makassar Location"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=119.440000%2C-5.170000%2C119.510000%2C-5.090000&layer=mapnik"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=119.350000%2C-5.250000%2C119.600000%2C-5.000000&layer=mapnik"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -141,4 +141,4 @@ export const Contact = () => {
       </div>
     </section>
   );
-};
+}; 
