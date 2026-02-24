@@ -3,7 +3,7 @@ import "./social.css";
 export const Social = () => {
   return (
     <div className="social-container">
-      <a
+      {/* <a
         href="https://www.linkedin.com/in/muhammad-muhajirin-chinsa-143b73344/"
         target="_blank"
         rel="noreferrer"
@@ -43,7 +43,7 @@ export const Social = () => {
         aria-label="Send email"
       >
         <i className="ri-mail-line"></i>
-      </a>
+      </a> */}
 
 <a
   href="https://sertifikatpage.netlify.app/"
