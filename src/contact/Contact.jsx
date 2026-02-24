@@ -8,7 +8,6 @@ import {
   FaInstagram,
   FaWhatsapp,
 } from "react-icons/fa";
-// import { FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 
 export const Contact = () => {
   // State untuk form feedback
@@ -31,13 +30,14 @@ export const Contact = () => {
           flexDirection: "column",
           alignItems: "center",
           textAlign: "center",
-        }}>
+        }}
+      >
         <h1>
           Contact<span style={{ color: "#26e6c6" }}> Me</span>
         </h1>
         <span style={{ color: "white", marginTop: "12px" }}>
           Always open to cool projects and new opportunities. Got an idea or
-          just want to say hi? Let s talk.
+          just want to say hi? Let’s talk.
         </span>
       </div>
 
@@ -55,7 +55,8 @@ export const Contact = () => {
               <h4>Email</h4>
               <a
                 href="mailto:muhkinsa081924@gmail.com"
-                className="contact-link">
+                className="contact-link"
+              >
                 muhkinsa081924@gmail.com
               </a>
             </div>
@@ -84,7 +85,8 @@ export const Contact = () => {
                 href="https://wa.me/6285298325668"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="contact-link">
+                className="contact-link"
+              >
                 +62 852-9832-5668
               </a>
             </div>
@@ -98,76 +100,43 @@ export const Contact = () => {
                 href="https://github.com/kinsa24"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn">
+                className="social-icon-btn"
+              >
                 <FaGithub />
               </a>
               <a
                 href="https://www.linkedin.com/in/muhammad-muhajirin-chinsa-143b73344/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn">
+                className="social-icon-btn"
+              >
                 <FaLinkedin />
               </a>
               <a
                 href="https://www.instagram.com/kinsaaaa_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon-btn">
+                className="social-icon-btn"
+              >
                 <FaInstagram />
               </a>
             </div>
           </div>
         </div>
 
-        {/* RIGHT COLUMN - Contact Form (UI Only) */}
+        {/* RIGHT COLUMN - Replace Form with OpenStreetMap iframe */}
         <div className="contact-right">
-          <form className="contact-form" onSubmit={handleSubmit}>
-            {/* Name Input */}
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Your name"
-                className="form-input"
-                required
-              />
-            </div>
-
-            {/* Email Input */}
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="your.email@example.com"
-                className="form-input"
-                required
-              />
-            </div>
-
-            {/* Message Textarea */}
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                placeholder="Your message here..."
-                className="form-textarea"
-                rows="5"
-                required
-              />
-            </div>
-
-            {/* Submit Button */}
-            <button type="submit" className="form-submit-btn">
-              Send Message
-            </button>
-
-            {/* UI Only Feedback */}
-            {formSubmitted && (
-              <p className="form-feedback">✨ UI only – coming soon</p>
-            )}
-          </form>
+          <div className="map-container">
+            <iframe
+              title="Makassar Location"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=119.440000%2C-5.170000%2C119.510000%2C-5.090000&layer=mapnik"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
