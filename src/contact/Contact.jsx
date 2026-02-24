@@ -67,12 +67,12 @@ export const Contact = () => {
             <div className="contact-icon-wrapper">
               <FaMapMarkerAlt className="contact-icon" />
             </div>
-            <div>
+            {/* <div>
               <h4>Location</h4>
               <p className="contact-text">
                 Sulawesi Selatan, Makassar, Indonesia
               </p>
-            </div>
+            </div> */}
           </div>
 
           <div className="contact-info-block">
