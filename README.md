@@ -1,2 +1,2 @@
 # portfoliodev
-portafolio con REACT 
+portafolio on REACT 
