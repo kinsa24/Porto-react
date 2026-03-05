@@ -57,7 +57,7 @@ export const Navbar = () => {
             offset={10}
             duration={1000}
           >
-            Projects
+            Project
           </Link>
           <Link
             to="contact"
