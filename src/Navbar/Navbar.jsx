@@ -48,7 +48,7 @@ export const Navbar = () => {
           >
             Skills
           </Link>
-          <Link
+          {/* <Link
             to="projects"
             className="nav-group"
             activeClass="active"
@@ -57,8 +57,8 @@ export const Navbar = () => {
             offset={10}
             duration={1000}
           >
-            {/* Project
-          </Link>
+            Project
+          </Link> */}
           <Link
             to="contact"
             className="nav-group"
@@ -67,7 +67,7 @@ export const Navbar = () => {
             smooth={true}
             offset={0}
             duration={1000}
-          > */}
+          >
             Contact
           </Link>
           <button onClick={showNavbar} className="nav-btn nav-close-btn">
