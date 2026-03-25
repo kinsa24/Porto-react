@@ -57,7 +57,7 @@ export const Navbar = () => {
             offset={10}
             duration={1000}
           >
-            Project
+            {/* Project
           </Link>
           <Link
             to="contact"
@@ -67,7 +67,7 @@ export const Navbar = () => {
             smooth={true}
             offset={0}
             duration={1000}
-          >
+          > */}
             Contact
           </Link>
           <button onClick={showNavbar} className="nav-btn nav-close-btn">
