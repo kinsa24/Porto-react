@@ -20,7 +20,7 @@ export const App = () => {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
       <WorkExperience />
       <Contact />
     </main>
