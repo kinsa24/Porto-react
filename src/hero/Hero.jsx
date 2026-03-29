@@ -26,7 +26,7 @@ export const Hero = () => {
           Hi, I'm
           M. Muhajirin<span style={{ color: "#26e6c6" }}> Chinsa</span> 
         </h1>
-        <h3>Frontend Developer</h3>
+        <h3>Software Engineer</h3>
       </div>
         
         <h className="hero-description">
