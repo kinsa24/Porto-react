@@ -6,7 +6,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(67, 67, 67);
+  background: rgb(31, 28, 28);
   z-index: 1000;
 }
 .logo {
@@ -23,7 +23,7 @@ header {
   background: transparent !important;
   background-color: transparent !important;
   color: #e6e6e6;
-  border-bottom: 1px solid rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
 }
 
