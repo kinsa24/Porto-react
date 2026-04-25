@@ -46,7 +46,7 @@ export const Social = () => {
       </a> */}
 
       <a
-  href="/cv" 
+  href="#" 
   target="_blank"
   rel="noopener noreferrer"
   className="social-link"
@@ -57,7 +57,7 @@ export const Social = () => {
 </a>
 
 <a
-  href="https://sertifikatpage.netlify.app/"
+  href="#"
   target="_blank"
   rel="noreferrer"
   className="social-link"
