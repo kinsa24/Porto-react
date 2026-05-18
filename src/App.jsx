@@ -7,6 +7,7 @@ import { Contact } from "./contact/Contact";
 import { WorkExperience } from "./work experience/work";
 import { useEffect } from "react";
 import AOS from "aos";
+import { ThemeProvider } from "./context/ThemeContext";
 
 export const App = () => {
   useEffect(() => {
@@ -15,14 +16,16 @@ export const App = () => {
     });
   }, []);
   return (
-    <main className="main_container">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      {/* <Projects /> */}
-      <WorkExperience />
-      <Contact />
-    </main>
+    <ThemeProvider>
+      <main className="main_container">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        {/* <Projects /> */}
+        <WorkExperience />
+        <Contact />
+      </main>
+    </ThemeProvider>
   );
 };

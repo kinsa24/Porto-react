@@ -3,9 +3,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import Logo from "../assets/Otak.png";
+import { useTheme } from "../context/ThemeContext";
 
 export const Navbar = () => {
   const navRef = useRef();
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === "dark";
+
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
@@ -74,9 +78,19 @@ export const Navbar = () => {
             <FaTimes />
           </button>
         </nav>
-        <button onClick={showNavbar} className="nav-btn">
-          <FaBars />
-        </button>
+        <div className="header-right">
+          <button
+            className="theme-toggle-nav-btn"
+            onClick={toggleTheme}
+            title={`Switch to ${isDark ? "light" : "dark"} mode`}
+            aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+          >
+            <span className="theme-toggle-nav-icon">{isDark ? "🌙" : "☀️"}</span>
+          </button>
+          <button onClick={showNavbar} className="nav-btn">
+            <FaBars />
+          </button>
+        </div>
       </header>
     </>
   );

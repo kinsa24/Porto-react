@@ -35,7 +35,7 @@ export const Contact = () => {
         <h1>
           Contact<span style={{ color: "#26e6c6" }}> Me</span>
         </h1>
-        <span style={{ color: "white", marginTop: "12px" }}>
+        <span style={{ color: "var(--muted-color)", marginTop: "12px" }}>
           Always open to cool projects and new opportunities. Got an idea or
           just want to say hi? Let’s talk.
         </span>

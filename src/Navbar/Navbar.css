@@ -1,61 +1,84 @@
-/* NAVBAR CSS*/
+/* NAVBAR CSS */
 header {
   position: fixed;
   width: 100vw;
   top: 0;
+  height: 3.5rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(31, 28, 28);
+  background: var(--nav-bg);
   z-index: 1000;
+  transition: background 0.4s ease;
+  box-sizing: border-box;
 }
+
 .logo {
   width: 100px;
   height: auto;
-  size-adjust: 100%;
-  margin: 1 1rem;
 }
 
 .navbar {
   display: flex;
-  align-items: left;
-  max-width: 55vw;
+  align-items: center;
   background: transparent !important;
   background-color: transparent !important;
-  color: #e6e6e6;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  color: var(--title-color);
+  border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
 }
 
 .nav-group {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
   text-decoration: none;
   font-weight: 600;
   color: var(--title-color);
-  transition: color 2s ease;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 .nav-group:hover {
-  color: #26e6c6;
+  color: var(--title-color);
 }
 
-header .nav-btn {
-  padding: 1.5rem;
+/* ========== HEADER RIGHT WRAPPER ========== */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ========== BURGER BUTTON ========== */
+.nav-btn {
+  padding: 0.5rem;
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
   color: var(--title-color);
+  font-size: 1.5rem;
   display: none;
   opacity: 0;
-  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.4s ease;
 }
 
+/* Desktop: hide burger */
+@media screen and (min-width: 951px) {
+  .nav-btn {
+    display: none !important;
+    opacity: 0;
+  }
+}
+
+/* Mobile */
 @media only screen and (max-width: 950px) {
-  header .nav-btn {
-    display: block;
+  .nav-btn {
+    display: flex;
     opacity: 1;
   }
+
   header nav {
     position: fixed;
     top: 0;
@@ -67,24 +90,73 @@ header .nav-btn {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background: rgba(67, 67, 67, 0.5);
+    background: var(--nav-mobile-bg);
     backdrop-filter: blur(10px);
     transition: 1s;
     transform: translateY(-100vh);
     z-index: 100;
   }
+
   header .responsive_nav {
     transform: none;
   }
+
   nav .nav-close-btn {
     position: absolute;
     top: 1rem;
     right: 0.5rem;
+    display: flex;
+    opacity: 1;
   }
-  
 }
 
-/* if navbar had solid bg, enforce page tone through its container */
-.navbar .container, .navbar-wrapper {
+/* Navbar container fallback */
+.navbar .container,
+.navbar-wrapper {
   background: transparent;
+}
+
+/* ========== THEME TOGGLE IN NAVBAR ========== */
+.theme-toggle-nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="dark"] .theme-toggle-nav-btn,
+:root:not([data-theme]) .theme-toggle-nav-btn {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] .theme-toggle-nav-btn {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .theme-toggle-nav-btn:hover,
+:root:not([data-theme]) .theme-toggle-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.08);
+}
+
+[data-theme="light"] .theme-toggle-nav-btn:hover {
+  background: rgba(0, 0, 0, 0.12);
+  transform: scale(1.08);
+}
+
+.theme-toggle-nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: transform 0.3s ease;
 }

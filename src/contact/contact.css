@@ -6,7 +6,8 @@
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: var(--contact-section-bg);
+  transition: background 0.4s ease;
 }
 
 /* === HEADER SECTION - Title & Subtitle === */
@@ -19,17 +20,19 @@
 .contact-main-title {
   font-size: 3.5rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--title-color);
   margin: 0 0 15px 0;
   letter-spacing: -1px;
+  transition: color 0.4s ease;
 }
 
 .contact-subtitle {
   font-size: 1.1rem;
-  color: #b0b0b0;
+  color: var(--muted-color);
   max-width: 500px;
   margin: 0 auto;
   line-height: 1.6;
+  transition: color 0.4s ease;
 }
 
 /* === MAIN CONTAINER - Left & Right Layout === */
@@ -59,8 +62,8 @@
 .contact-icon-wrapper {
   width: 50px;
   height: 50px;
-  background: rgba(38, 230, 198, 0.1);
-  border: 2px solid #26e6c6;
+  background: rgba(var(--accent-rgb), 0.1);
+  border: 2px solid var(--accent-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -70,25 +73,26 @@
 }
 
 .contact-icon-wrapper:hover {
-  background: rgba(38, 230, 198, 0.2);
+  background: rgba(var(--accent-rgb), 0.2);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(38, 230, 198, 0.2);
+  box-shadow: 0 8px 20px rgba(var(--accent-rgb), 0.2);
 }
 
 .contact-icon {
   font-size: 1.5rem;
-  color: #26e6c6;
+  color: var(--accent-color);
 }
 
 .contact-info-block h4 {
-  color: #ffffff;
+  color: var(--title-color);
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 5px 0;
+  transition: color 0.4s ease;
 }
 
 .contact-link {
-  color: #b0b0b0;
+  color: var(--muted-color);
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -96,14 +100,15 @@
 }
 
 .contact-link:hover {
-  color: #26e6c6;
+  color: var(--title-color);
   transform: translateX(5px);
 }
 
 .contact-text {
-  color: #b0b0b0;
+  color: var(--muted-color);
   font-size: 1rem;
   margin: 0;
+  transition: color 0.4s ease;
 }
 
 /* Social Section */
@@ -112,10 +117,11 @@
 }
 
 .contact-social-section h3 {
-  color: #ffffff;
+  color: var(--title-color);
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 20px 0;
+  transition: color 0.4s ease;
 }
 
 .contact-social-icons {
@@ -126,22 +132,22 @@
 .social-icon-btn {
   width: 50px;
   height: 50px;
-  border: 2px solid #26e6c6;
+  border: 2px solid var(--accent-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #26e6c6;
+  color: var(--accent-color);
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1.2rem;
 }
 
 .social-icon-btn:hover {
-  background: #26e6c6;
-  color: #1a1a1a;
+  background: var(--accent-color);
+  color: var(--bg-color);
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(38, 230, 198, 0.3);
+  box-shadow: 0 10px 25px rgba(var(--accent-rgb), 0.3);
 }
 
 /* === RIGHT COLUMN - Contact Form === */
@@ -150,12 +156,13 @@
 }
 
 .contact-form {
-  background: rgba(45, 45, 45, 0.8);
+  background: var(--form-bg);
   padding: 40px;
   border-radius: 15px;
-  border: 1px solid rgba(38, 230, 198, 0.2);
+  border: 1px solid var(--border-accent);
   backdrop-filter: blur(10px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: background 0.4s ease, border-color 0.4s ease;
 }
 
 /* Form Group - Label & Input Container */
@@ -166,20 +173,21 @@
 }
 
 .form-group label {
-  color: #ffffff;
+  color: var(--title-color);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
   display: block;
+  transition: color 0.4s ease;
 }
 
 .form-input,
 .form-textarea {
-  background: rgba(30, 30, 30, 0.6);
-  border: 1.5px solid rgba(38, 230, 198, 0.2);
+  background: var(--input-bg);
+  border: 1.5px solid var(--border-accent);
   border-radius: 8px;
   padding: 12px 16px;
-  color: #ffffff;
+  color: var(--title-color);
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
@@ -188,14 +196,14 @@
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: #26e6c6;
-  background: rgba(30, 30, 30, 0.9);
-  box-shadow: 0 0 15px rgba(38, 230, 198, 0.3);
+  border-color: var(--accent-color);
+  background: var(--input-bg-focus);
+  box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.25);
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: #707070;
+  color: var(--placeholder-color);
 }
 
 .form-textarea {
@@ -206,8 +214,8 @@
 
 /* Submit Button */
 .form-submit-btn {
-  background: #26e6c6;
-  color: #1a1a1a;
+  background: var(--accent-color);
+  color: var(--bg-color);
   border: none;
   padding: 14px 28px;
   border-radius: 8px;
@@ -220,11 +228,11 @@
 }
 
 .form-submit-btn:hover {
-  background: #1a1a1a;
-  color: #26e6c6;
-  border: 2px solid #26e6c6;
+  background: var(--bg-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(38, 230, 198, 0.3);
+  box-shadow: 0 10px 30px rgba(var(--accent-rgb), 0.3);
 }
 
 .form-submit-btn:active {
@@ -233,7 +241,7 @@
 
 /* UI Only Feedback Message */
 .form-feedback {
-  color: #26e6c6;
+  color: var(--title-color);
   font-size: 0.9rem;
   text-align: center;
   margin-top: 15px;
@@ -305,7 +313,6 @@
 @media screen and (max-width: 767px) {
   .contact-section {
     padding: 40px 15px;
-    
   }
 
   .contact-header {
@@ -366,16 +373,17 @@
   }
 }
 
-/* Replace gradients/other tones in contact/footer with base tone */
-.contact, .contact-section, .contact-container, footer {
-  background: #1d1d1d !important;
-  background-color: #1d1d1d !important;
-  color: #e6e6e6;
+/* Contact section & footer base tone */
+.contact, footer {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* contact card/button readability */
+/* Contact inner cards */
 .contact .card, .contact-card {
-  background: #272727;
-  color: #e6e6e6;
-  border: 1px solid rgba(255,255,255,0.04);
+  background: var(--card-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  transition: background 0.4s ease, color 0.4s ease;
 }
