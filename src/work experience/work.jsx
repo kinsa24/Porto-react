@@ -27,7 +27,7 @@ export const WorkExperience = () => {
     {
       id: 3,
       role: "Junior Developer",
-      company: "Diskominfo Makassar",
+      company: "Dinas Komunikasi dan Informatika Makassar",
       period: "June - August 2025",
       description: "Designed a web-based information interface for the Mayor of Makassar activities using React, focusing on clean UI and component-based structure.",
     },
